@@ -17,19 +17,19 @@ public class FruitAppTests {
 
     @Qualifier("apple")
     @Autowired
-    private IFruit apple;
+    private IFruit fruit;
 
     @Resource(name = "banana")
-    private IFruit banana;
+    private IFruit fruit2;
 
     @Test
     public void anAppleShouldBeAutowired() {
-        Assert.assertEquals("apple", apple.whoAmI());
+        Assert.assertEquals("apple", fruit.whoAmI());
     }
 
     @Test
     public void aBananaShouldBeTheResource() {
-        Assert.assertEquals("banana", banana.whoAmI());
+        Assert.assertEquals("banana", fruit2.whoAmI());
     }
 
 }
