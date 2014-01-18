@@ -1,4 +1,4 @@
-package org.zezutom.springexamples.primary;
+package org.zezutom.springseries0114.part01.primary;
 
 public interface IMessage {
 

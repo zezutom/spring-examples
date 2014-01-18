@@ -1,4 +1,4 @@
-package org.zezutom.springexamples.qualifier;
+package org.zezutom.springseries0114.part01.qualifier;
 
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;

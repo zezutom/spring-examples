@@ -1,4 +1,4 @@
-package org.zezutom.springexamples.primary;
+package org.zezutom.springseries0114.part01.primary;
 
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
