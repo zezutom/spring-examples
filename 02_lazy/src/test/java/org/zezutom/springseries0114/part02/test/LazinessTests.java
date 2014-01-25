@@ -14,11 +14,10 @@ import org.zezutom.springseries0114.part02.BeanLogger;
 import java.util.Collection;
 
 import static org.junit.Assert.*;
-import static org.hamcrest.CoreMatchers.is;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = AppConf.class)
-public class LazinessTest {
+public class LazinessTests {
 
     @Autowired
     private ApplicationContext context;
@@ -51,6 +50,10 @@ public class LazinessTest {
 
         // beanD is a prototype
         assertFalse(beans.contains("beanD"));
+
+        // 'foo' is lazy but the eager 'bar' depends on it
+        assertTrue(beans.contains("foo"));
+        assertTrue(beans.contains("bar"));
     }
 
     @Test

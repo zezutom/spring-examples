@@ -29,4 +29,16 @@ public class AppConf {
     public BeanD beanD() {
         return new BeanD();
     }
+
+    @Bean
+    @Lazy
+    public Foo foo() {
+        return new Foo();
+    }
+
+    @Bean
+    public Bar bar() {
+        return new Bar();
+    }
+
 }
