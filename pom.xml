@@ -10,6 +10,7 @@
     <modules>
         <module>01_preferred_beans</module>
         <module>02_lazy</module>
+        <module>03_lazy_inject</module>
     </modules>
 
     <properties>
