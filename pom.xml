@@ -11,6 +11,7 @@
         <module>01_preferred_beans</module>
         <module>02_lazy</module>
         <module>03_lazy_inject</module>
+        <module>04_component_vs_bean</module>
     </modules>
 
     <properties>
@@ -19,6 +20,16 @@
         <spring.version>4.0.0.RELEASE</spring.version>
         <aspectj.version>1.7.2</aspectj.version>
     </properties>
+
+    <repositories>
+        <repository>
+            <id>com.springsource.repository.maven.snapshot</id>
+            <url>http://maven.springframework.org/snapshot/</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 
     <dependencies>
         <dependency>
