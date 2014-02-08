@@ -2,10 +2,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.zezutom</groupId>
-    <artifactId>spring-series-jan2014-01</artifactId>
+    <artifactId>spring-series-jan2014-shared</artifactId>
     <packaging>jar</packaging>
     <version>${project.version}</version>
-    <name>01 Preferred beans</name>
+    <name>Spring series January 2014 Shared Resources</name>
     <parent>
         <groupId>org.zezutom</groupId>
         <artifactId>spring-series-jan2014</artifactId>
@@ -19,12 +19,12 @@
                 <executions>
                     <execution>
                         <goals>
-                            <goal>process</goal>
+                            <goal>bundle</goal>
                         </goals>
                         <configuration>
-                            <resourceBundles>
-                                <resourceBundle>org.zezutom:spring-series-jan2014-shared:${project.version}</resourceBundle>
-                            </resourceBundles>
+                            <includes>
+                                <include>**/log4j.properties</include>
+                            </includes>
                         </configuration>
                     </execution>
                 </executions>

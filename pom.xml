@@ -8,6 +8,7 @@
     <name>Spring series January 2014</name>
 
     <modules>
+        <module>shared_resources</module>
         <module>01_preferred_beans</module>
         <module>02_lazy</module>
         <module>03_lazy_inject</module>
@@ -16,9 +17,10 @@
 
     <properties>
         <project.version>1.0-SNAPSHOT</project.version>
-        <java.version>1.6</java.version>
+        <java.version>1.7</java.version>
         <spring.version>4.0.0.RELEASE</spring.version>
         <aspectj.version>1.7.2</aspectj.version>
+        <resources.plugin.version>1.5</resources.plugin.version>
     </properties>
 
     <repositories>
