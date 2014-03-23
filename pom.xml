@@ -13,6 +13,7 @@
         <module>02_lazy</module>
         <module>03_lazy_inject</module>
         <module>04_component_vs_bean</module>
+        <module>05_generics_injection</module>
     </modules>
 
     <properties>
